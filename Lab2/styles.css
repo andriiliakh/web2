@@ -1,0 +1,41 @@
+.menu {
+    display: table;
+    width: 100%; /*Optional*/
+    table-layout: fixed; /*Optional*/
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+#buttons, #report{
+	text-align: center;
+	margin: 1%;
+}
+.menu_option {
+    display: table-cell;
+	text-align: center;
+	font-size: 1.2em;
+}
+.name {
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 1%;
+}
+#show_table p {
+	text-align: center;
+}
+#show_table table {
+	border: 1px solid black;
+	width: 98%;
+	margin: 1%;
+	border-collapse: collapse;
+}
+#show_table th,td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+#show_table table thead tr th {
+	scope: col;
+}
+.mar {
+	margin:1%;
+}

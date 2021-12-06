@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Test</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="main.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<div class="name">Menu</div>
+			<div id="buttons">
+				<input type="button" value="Clean LC" onclick="cleanLC();location.reload();">
+			</div>
+			<form id="page_choise">
+				<div class="menu">
+					<div class="menu_option">
+						<input type="radio" id="port" name="page" value="port">
+						<label for="port">Port</label>
+					</div>
+			
+					<div class="menu_option">
+						<input type="radio" id="ship" name="page" value="ship">
+						<label for="ship">Ship</label>
+					</div>
+		
+					<div class="menu_option">
+						<input type="radio" id="marina" name="page" value="marina">
+						<label for="marina">Marina</label>
+					</div>
+		
+					<div class="menu_option">
+						<input type="radio" id="som" name="page" value="som">
+						<label for="som">Ship on Marina</label>
+					</div>
+				</div>
+			</form>
+
+			<div id="reports" class="menu">
+				<div class="menu_option">
+					<label for="rep1">Show all ships on marina:</label>
+					<input type="text" id="rep1" name="rep1">
+					<input type="button" value="Generate" onclick="gen_rep1();">
+				</div>
+				<div class="menu_option">
+					<label for="rep2">Show all ships on port:</label>
+					<input type="text" id="rep2" name="rep2">
+					<input type="button" value="Generate" onclick="gen_rep2();">
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div class="name">Create</div>
+			<form id="form_create">
+				<div id="create" class ="menu">
+				</div>
+			</form>
+			<div class="name">List</div>
+			<div id="show_table">
+			</div>
+		</div>
+	</body>
+</html>
